@@ -19,6 +19,11 @@ function Login() {
       const res = await axios.post('http://localhost:3000/auth/login', data);
       if(res.data.token){
         localStorage.setItem('token',`Bearer ${res.data.token}`)
+
+        if(res.data.role ==='admin'){
+          navigate('/admin/home')
+          return
+        }
         navigate(-1)
       }
       

@@ -15,7 +15,9 @@ function NavComponent () {
             <Nav.Link href="#home">Cart</Nav.Link>
             <Nav.Link href="#link">wishlist</Nav.Link>
             <NavDropdown title="Register" id="basic-nav-dropdown">
-              <Link to={'/login'}><NavDropdown.Item href="#action/3.1">Login</NavDropdown.Item></Link>
+              {/* <Link to={'/login'}> */}
+              <NavDropdown.Item href="/login">Login</NavDropdown.Item>
+              {/* </Link> */}
               <NavDropdown.Item href="#action/3.2">SignUp</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
             </NavDropdown>
